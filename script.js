@@ -1,5 +1,5 @@
 let tentativas = 0;
-let numeroRandomico=Math.floor(Math.random()*100)+1;
+let numeroRandomico = Math.floor(Math.random() * 100) + 1;
 
 function checarTentativa(){
     tentativas++;
@@ -15,5 +15,13 @@ function checarTentativa(){
 }
 function perdeu(){
     
-    window.location.reload();
+    //window.location.reload();
+    
+    window.location = "/perdeu.html";
+}
+
+function venceu(){
+
+    window.location = "/venceu.html";
+
 }
